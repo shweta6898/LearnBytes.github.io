@@ -1,0 +1,420 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+	
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 20px;
+ background-color: teal;
+ color: #fff;
+}
+.navbar ul li{
+	list-style-type:none;
+}
+.nav-links a {
+ color: #fff;
+ text-decoration:none;
+}
+/* LOGO */
+.logo {
+ font-size: 32px;
+}
+/* NAVBAR MENU */
+.menu {
+ display: flex;
+ gap: 1em;
+ font-size: 18px;
+}
+.menu li:hover {
+ background-color: #4c9e9e;
+ border-radius: 5px;
+ transition: 0.3s ease;
+}
+.menu li {
+ padding: 5px 14px;
+}
+
+.banner {
+	width:100%;
+	height:500px;
+	background:url('photo-1520085601670-ee14aa5fa3e8.jfif');
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.banner h1{
+	text-align:center;
+	text-transform:uppercase;
+	font-size:40px;
+	padding-top:60px;
+	color:teal;
+	font-weight:bold;
+}
+.banner p{
+	font-size:20px;
+	color:black;
+	text-align:center;
+	margin-top:20px;
+	font-weight:bold;
+	color:teal;
+}
+.about{
+	background:teal;
+}
+.about h3{
+	text-align:center;
+	text-transform:uppercase;
+	color:white;
+	padding-top:20px;
+	font-size:30px;
+}
+.about p{
+	font-size:18px;
+	text-align:justify;
+	padding:20px 30px;
+	color:white;
+	line-height:30px;
+}
+.services{
+	width:100%;
+}
+.services h1{
+	text-align:center;
+	text-transform:uppercase;
+	padding-top:20px;
+	font-size:30px;
+}
+.services  p{
+	font-size:18px;
+	text-align:center;
+	padding:10px 40px;
+}
+.service{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	flex-wrap:wrap;
+}
+.box{
+  width: 300px;
+  height: 400px;
+  margin: 5px;
+  text-align: center;
+  padding: 10px 10px;
+  color:black;
+  position: relative;
+  border-radius: 5px;
+  background:#DCDCDC;
+}
+.box .icon{
+	width:100px;
+	height:100px;
+	margin-top:10px;
+	background:teal;
+	border-radius:50%;
+	text-align:center;
+	display:inline-block;
+	position:relative;
+}
+.box .icon .fas{
+	font-size:40px;
+	position:absolute;
+	color:white;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.box h2{
+	margin-top:10px;
+}
+.box p{
+	text-align:justify;
+	padding:10px 10px;
+}
+.box:hover{
+	background:teal;
+	color:white;
+}
+.box:hover .icon{
+	background:white;
+}
+.box:hover .icon .fas{
+	color:black;
+}
+
+.reset{
+	width:100%;
+	height:500px;
+	position:relative;
+	margin-top:20px;
+	background:teal;
+}
+.reset h1{
+	text-align:center;
+	text-transform:uppercase;
+	padding-top:20px;
+	font-size:30px;
+	color:white;
+}
+.view-box{
+	width:800px;
+	height:400px;
+	position:absolute;
+	top:40%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	overflow:hidden;
+}
+#testimonials{
+	display:flex;
+	transition:0.5s;
+}
+.user{
+	width:800px;
+	text-align:center;
+	padding:20px 70px;
+	box-sizing:border-box;
+	background:white;
+	margin:0 20px;
+}
+.user h3{
+	text-align:center;
+	font-size:30px;
+	color:teal;
+}
+.user p{
+	font-size:18px;
+	line-height:30px;
+	margin:20px;
+}
+.controls{
+	display:flex;
+	position:absolute;
+	bottom:0;
+	left:50%;
+	transform:translate(-50%);
+}
+.controls span{
+	width:10px;
+	height:10px;
+	border-radius:15px;
+	background:black;
+	margin:0 5px;
+	cursor:pointer;
+	transition:0.5s;
+}
+.active{
+	width:40px !important;
+}
+.contact{
+	width:100%;
+	height:100%;
+	background:#DCDCDC;
+}
+.contact h1{
+	text-align:center;
+	color:teal;
+	text-transform:uppercase;
+	padding-top:20px;
+	font-size:30px;
+}
+.contact p{
+	font-size:20px;
+	padding:20px;
+	text-transform:uppercase;
+	text-align:center;
+}
+#form1{
+	text-align:center;
+}
+#form1 input{
+	width:600px;
+	height:30px;
+	margin:5px;
+	border:2px solid teal;
+	cursor:pointer;
+}
+#form1 textarea{
+	width:600px;
+	height:200px;
+	margin:5px;
+	border:2px solid teal;
+	text-align:center;
+	font-size:16px;
+	color:black;
+}
+#form1 textarea::placeholder{
+	color:black;
+	padding:10px;
+}
+#form1 input::placeholder{
+	text-align:center;
+	font-size:16px;
+	color:black;
+	font-family:monospace;
+}
+#form1 button{
+	width:300px;
+	height:40px;
+	text-align:center;
+	margin:20px;
+	background:teal;
+	color:white;
+	font-size:20px;
+	text-transform:uppercase;
+}
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+ display: none;
+} 
+/*HAMBURGER MENU*/
+.hamburger {
+ display: none;
+ font-size: 24px;
+ user-select: none;
+}
+.cross {
+ display: none;
+ font-size: 24px;
+ user-select: none;
+}
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+.menu { 
+ display:none;
+ position: absolute;
+ background-color:teal;
+ right: 0;
+ left: 0;
+ text-align: center;
+ padding: 16px 0;
+}
+.menu li:hover {
+ display: inline-block;
+ background-color:#4c9e9e;
+ transition: 0.3s ease;
+}
+.menu li {
+ margin-top: 12px;
+}
+input[type=checkbox]:checked ~ .menu{
+ display: block;
+}
+.hamburger {
+ display: block;
+}
+}
+@media (max-width:700px) and (min-width:500px){
+	.contact{
+		width:100%;
+		
+	}
+	.contact p{
+	font-size:10px;
+	padding:16px;
+	text-transform:uppercase;
+	text-align:center;
+}
+#form1 input{
+	width:450px;
+	height:30px;
+	margin:5px;
+}
+#form1 textarea{
+	width:450px;
+	height:200px;
+	margin:5px;
+	border:2px solid teal;
+	text-align:center;
+	font-size:16px;
+	color:black;
+}
+}
+@media (max-width:800px) and (min-width:700px){
+	.view-box{
+	width:600px;
+	padding:20px 30px;
+	margin:0 10px;
+	}
+	.user h3{
+	text-align:center;
+	font-size:20px;
+	color:teal;
+}
+.user p{
+	font-size:14px;
+	line-height:30px;
+	margin:40px;
+}
+}
+@media (max-width:700px) and (min-width:600px){
+	.view-box{
+	width:500px;
+	padding:10px 40px;
+	margin:0 5px;
+	}
+	.user h3{
+	text-align:center;
+	font-size:20px;
+	color:teal;
+}
+.user p{
+	font-size:14px;
+	line-height:30px;
+	margin:40px;
+	padding:0 50px;
+}
+}
+@media (max-width:610px) and (min-width:500px){
+	.view-box{
+	width:400px;
+	padding:10px 50px;
+	margin:0 5px;
+	}
+	.user h3{
+	text-align:center;
+	font-size:20px;
+	color:teal;
+}
+.user p{
+	font-size:14px;
+	line-height:30px;
+	margin:40px;
+	padding:0 80px;
+}
+}
+@media (max-width:500px) and (min-width:400px){
+	.view-box{
+	width:300px;
+	padding:10px 40px;
+	margin:0 5px;
+	}
+	.user h3{
+	text-align:center;
+	font-size:20px;
+	color:teal;
+}
+.user p{
+	font-size:12px;
+	line-height:30px;
+	margin:40px;
+	padding:0 160px;
+}
+#form1 input{
+	width:350px;
+	margin:5px;
+}
+#form1 textarea{
+	width:350px;
+	height:200px;
+	margin:5px;
+	font-size:14px;
+}
+}
